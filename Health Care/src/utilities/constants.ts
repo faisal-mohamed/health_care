@@ -1,5 +1,4 @@
 // import { ToastPosition, toast } from "react-toastify";
-import { head } from "lodash";
 import { executiveDashIcon } from "../assets/Images";
 
 // export type TableInfo = {

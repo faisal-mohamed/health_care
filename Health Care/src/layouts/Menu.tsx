@@ -8,7 +8,7 @@ import "./custom-layout.scss";
 import DashBoardIcon from '../../src/assets/Images/logo/dashboard_icon.png'
 
 const Menu = () => {
-  const [activeNav, setActiveNav] = useState<string>("/executive-dashboards");
+  const [activeNav, _] = useState<string>("/executive-dashboards");
 
  // const { pathname } = useLocation();
 
