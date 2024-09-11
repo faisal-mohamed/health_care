@@ -341,24 +341,7 @@ const PatientDetails = [
   },
 ];
 
-// const CreateTableWithColoumns = `
-//     CREATE TABLE IF NOT EXISTS PatientDetails (
-//     "memberId" VARCHAR(100),
-//     "memberName" VARCHAR(100),
-//     "address" VARCHAR(100),
-//     "email" VARCHAR(100),
-//     "phone_no" VARCHAR(100),
-//     "doctor" VARCHAR(100),
-//     "vendor" VARCHAR(100),
-//     "aco" VARCHAR(100),
-//     "insurence_type" VARCHAR(100),
-//     "primary_illness" VARCHAR(100),
-//     "do_not_call_list" VARCHAR(100),
-//     "dateOfJoin" DATE,
-//     "totalPremium" DECIMAL(10,2),
-//     "noOfClaims" INTEGER,
-//     "totalClaimAmount" DECIMAL(10,2));
-//   `;
+
 
 const CreateTableWithColoumns = `
   CREATE TABLE PatientDetails (
@@ -380,14 +363,7 @@ const CreateTableWithColoumns = `
 );
 `;
 
-// const addData = (patientDetail) => {
-//   const fields = Object.keys(patientDetail);
-//   const values = Object.values(patientDetail);
-//   const addDataQuery = `INSERT INTO PatientDetails(${fields.join(
-//     ", "
-//   )}) VALUES (${values.map((value) => `'${value}'`).join(", ")})`;
-//   return addDataQuery;
-// };
+
 const addData = (patientDetail) => {
   const fields = Object.keys(patientDetail);
   const values = Object.values(patientDetail).map(value => typeof value === 'string' ? `'${value.replace(/'/g, "''")}'` : value); // Handle single quotes in string values
@@ -395,12 +371,7 @@ const addData = (patientDetail) => {
   return addDataQuery;
 };
 
-// const fields = Object.keys(PatientDetails);
-// const values = Object.values(PatientDetails);
 
-// const addDataQuery = `INSERT INTO PatientDetails(${fields.join(
-//   ", "
-// )}) VALUES (${values.map((value) => `'${value}'`).join(", ")})`;
 
 const getData = `SELECT * FROM PatientDetails`;
 
