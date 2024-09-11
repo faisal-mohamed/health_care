@@ -1,8 +1,15 @@
 
+import PageHeader from '../../layouts/PageHeader'
+import ReportGenerator from './ReportGeneration/ReportGenerator'
 
 const index = () => {
   return (
-    <div>Report</div>
+    <div>
+      <PageHeader headerName='Reports'/>
+      <div className="page-content">
+        <ReportGenerator/>
+      </div>
+    </div>
   )
 }
 

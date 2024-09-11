@@ -114,20 +114,11 @@ export const member_details_three = [
   { header: "No of Claims", accessor: "noofclaims" },
   { header: "Total Claim Amount ($)", accessor: "totalclaimamount" },
 ];
-// {
-//   "memberid": 7,
-//   "membername": "Sophia Johnson",
-//   "address": "Ahmedabad, India",
-//   "email": "sophia.johnson@example.com",
-//   "phone_no": "9412345678",
-//   "doctor": "Dr. Kenneth J. Cherry Jr.",
-//   "vendor": "",
-//   "aco": "UnityPoint Health ACO",
-//   "insurence_type": "Medicaid - State",
-//   "primary_illness": "Neurological Disorders",
-//   "do_not_call_list": "Yes",
-//   "dateofjoin": "2017-06-04T18:30:00.000Z",
-//   "totalpremium": 1400,
-//   "noofclaims": 3,
-//   "totalclaimamount": 600
-// }
+
+export const reportTypes = [
+  {label: "Members", value: "MEMBER.csv"},
+  {label: "Membership", value: "MEMBERSHIP.csv"},
+  {label: "Member Identifier", value: "MEMBER_IDENTIFIER.csv"},
+  {label: "Member Attribution", value: "MEMBER_ATTRIBUTION.csv"},
+
+]

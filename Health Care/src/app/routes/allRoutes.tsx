@@ -9,7 +9,7 @@ const Dashboards = lazy(
   () => import("../../Pages/DashboardGeneral/ExecutiveDashboard/index")
 );
 const Reports = lazy(
-  () => import("../../Pages/DashboardGeneral/Report/index")
+  () => import("../../Pages/Report/index")
 );
 
 const MemberJourney = lazy(
