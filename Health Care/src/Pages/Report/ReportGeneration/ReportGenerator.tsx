@@ -45,7 +45,7 @@ const ReportGenerator = () => {
         <div>
         <div style={{ padding: '20px' ,width: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 auto' }}>
             <FormControl fullWidth variant="outlined">
-                <InputLabel id="file-select-label">Select File</InputLabel>
+                <InputLabel id="file-select-label">Select Report Type</InputLabel>
                 <Select
                     labelId="file-select-label"
                     id="file-select"
